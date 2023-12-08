@@ -1,0 +1,132 @@
+body{
+    margin :0;
+    padding: 0;
+}
+.form-size{
+    width: 382px;
+}
+
+.form-box{
+    display: flex;
+    height: 25%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+#title{
+    color: #72DB73;
+    display: flex;
+    justify-content: center;
+    font-family: Single Day;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 139.688%;
+    margin: 0;
+}
+#subtitle{
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 139.688%; /* 34.922px */
+    margin-bottom: 25px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+     
+}
+.checkbox{
+    display: flex;
+}
+.checkbox >input{
+    width: fit-content;
+    align-items: start;
+}
+
+div > input{
+    width: 350px;
+    height: 50.869px;
+    flex-shrink: 0;
+    border-radius: 3.816px;
+    border: none;
+    background: #292929;
+    padding-left: 30px;
+    color: #7C7C7C;
+    font-family: DM Sans;
+    font-size: 20.033px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 139.688%; /* 27.984px */
+    letter-spacing: 0.401px;
+}
+
+form .input:required:invalid {
+    border: 2px solid transparent; /* Set a transparent border by default */
+    /* other styling properties if needed */
+}
+
+form.submitted .input:required:invalid {
+    border-color: red; /* Apply red border after submit is clicked */
+    /* other styling properties if needed */
+}
+label{
+    color: #7C7C7C;
+    font-family: DM Sans;
+    font-size: 20.033px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 139.688%; /* 27.984px */
+    letter-spacing: 0.401px;
+    margin-left: 5px;
+}
+
+#submit-btn{
+    height: 61px;
+    width: 382px;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 108.688%; /* 31.519px */
+    letter-spacing: 0.58px;
+    border-radius: 28px;
+    background: #72DB73;
+}
+
+p{
+    color: white;
+    width: 382px;
+    font-family: Roboto;
+    font-size: small;
+}
+
+.errorPara{
+    color: red;
+
+}
+@media only screen and (max-width: 768px) {
+    .left-side,
+    .right-side {
+        width: 100%;
+    }
+
+    .left-side > h1 {
+        margin: 15px; /* Adjust margin for better spacing on small screens */
+    }
+
+    .form-size {
+        max-width: none; /* Remove maximum width restriction */
+    }
+}
